@@ -4,7 +4,7 @@
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "public/**"],
-      "inputs": ["src/**/*", "pages/**/*"]
+      "inputs": ["!public/robots.txt", "!public/sitemap.xml", "!public/sitemap-*.xml"]
     },
     "postbuild": {
       "dependsOn": ["^build"],
